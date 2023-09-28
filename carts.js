@@ -1,28 +1,39 @@
-// JavaScript for shopping cart functionality
+// JavaScript for "Add to Cart" functionality
 
 // Initialize an empty cart array to store cart items
 let cart = [];
 
 // Function to add an item to the cart
-function addToCart(productId, productPrice) {
-    cart.push({ id: productId, price: productPrice });
+function addToCart(productName, productPrice) {
+    // Create an object representing the product
+    const product = {
+        name: productName,
+        price: productPrice
+    };
+
+    // Add the product to the cart array
+    cart.push(product);
+
+    // Update the cart display
     updateCartDisplay();
 }
 
 // Function to update the cart display
 function updateCartDisplay() {
     const cartDisplay = document.getElementById('cart-display');
-    const cartTotal = cart.reduce((total, item) => total + item.price, 0);
+    const cartTotal = calculateCartTotal();
     
     // Display the total value of items in the cart
     cartDisplay.textContent = `Cart Total: $${cartTotal.toFixed(2)}`;
 }
 
-// Add event listeners to "Add to Cart" buttons
-document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', function() {
-        const productId = this.getAttribute('data-id');
-        const productPrice = parseFloat(this.getAttribute('data-price'));
-        addToCart(productId, productPrice);
-    });
-});
+// Function to calculate the cart total
+function calculateCartTotal() {
+    return cart.reduce((total, product) => total + product.price, 0);
+}
+
+// Example usage:
+// addToCart('Art Deco Inspired Bed', 350);
+
+// You can call addToCart with the product name and price as shown above
+// to add items to the cart.
