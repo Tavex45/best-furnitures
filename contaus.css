@@ -1,0 +1,136 @@
+/* Styling for the Contact Us page */
+
+/* Apply beautiful fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico|Lobster&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    background-image: url('contact-header.jpg'); /* Add an attractive background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Information Section */
+.contact-info {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-media h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #0073e6;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-media a:hover {
+    color: #0050a5;
+}
+
+/* Website Builders Section */
+.website-builders {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.website-builders h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.website-builders ul {
+    list-style: none;
+    padding: 0;
+}
+
+.website-builders li {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    font-size: 16px;
+}
+
+/* Media Queries for Responsive Design (adjust as needed) */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .contact-info h2,
+    .social-media h2,
+    .website-builders h2 {
+        font-size: 24px;
+    }
+
+    .contact-info p,
+    .social-media li,
+    .website-builders li {
+        font-size: 16px;
+    }
+}
