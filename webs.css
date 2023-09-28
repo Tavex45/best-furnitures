@@ -146,7 +146,7 @@ nav ul li a:hover {
 
 /* Set the background image for the body */
 body {
-    background-image: url('bed-background.jpg');
+    background-image: url('https://github.com/Tavex45/best-furnitures/blob/main/image%208.jpeg?raw=true');
     background-size: cover; /* Adjust the image size to cover the entire viewport */
     background-position: center center; /* Center the image horizontally and vertically */
     background-attachment: fixed; /* Fixed background */
