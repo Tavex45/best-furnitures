@@ -1,0 +1,143 @@
+/* Styling for the Home page */
+
+/* Apply beautiful fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico|Lobster&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    background-image: url('background-image.jpg'); /* Add an attractive background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Featured Beds Section */
+.featured-beds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.featured-bed {
+    width: 30%;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.featured-bed:hover {
+    transform: scale(1.05);
+}
+
+.featured-bed img {
+    max-width: 100%;
+    height: auto;
+}
+
+.featured-bed h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.featured-bed p {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    color: #777;
+}
+
+/* Shop Now Button */
+.shop-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.shop-button a {
+    text-decoration: none;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.shop-button a:hover {
+    background-color: #ff3300;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.testimonial p {
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-text {
+    font-size: 16px;
+}
+
+/* Media Queries for Responsive Design (adjust as needed) */
+@media (max-width: 768px) {
+    .featured-bed {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .featured-bed {
+        width: 100%;
+    }
+}
