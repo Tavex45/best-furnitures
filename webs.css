@@ -143,4 +143,15 @@ nav ul li a:hover {
         width: 45%;
         margin: 10px;
     }
+
+/* Set the background image for the body */
+body {
+    background-image: url('bed-background.jpg');
+    background-size: cover; /* Adjust the image size to cover the entire viewport */
+    background-position: center center; /* Center the image horizontally and vertically */
+    background-attachment: fixed; /* Fixed background */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+    
 }
